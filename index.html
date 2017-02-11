@@ -394,36 +394,36 @@
         <!-- End Google Recaptcha -->
         <!-- Google translate -->
         <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
-                multilanguagePage: true,
-                gaTrack: true,
-                gaId: 'UA-80900288-1'
-            }, 'google_translate_element');
-        }
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+                    multilanguagePage: true,
+                    gaTrack: true,
+                    gaId: 'UA-80900288-1'
+                }, 'google_translate_element');
+            }
         </script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
         <!-- End Google translate -->
         <!-- Kissmetrics -->
         <script type="text/javascript">
-        var _kmq = _kmq || [];
-        var _kmk = _kmk || '503f11f8269fc562818802321e1aa9bad61c3722';
+            var _kmq = _kmq || [];
+            var _kmk = _kmk || '503f11f8269fc562818802321e1aa9bad61c3722';
 
-        function _kms(u) {
-            setTimeout(function() {
-                var d = document,
-                    f = d.getElementsByTagName('script')[0],
-                    s = d.createElement('script');
-                s.type = 'text/javascript';
-                s.async = true;
-                s.src = u;
-                f.parentNode.insertBefore(s, f);
-            }, 1);
-        }
-        _kms('//i.kissmetrics.com/i.js');
-        _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+            function _kms(u) {
+                setTimeout(function() {
+                    var d = document,
+                        f = d.getElementsByTagName('script')[0],
+                        s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = u;
+                    f.parentNode.insertBefore(s, f);
+                }, 1);
+            }
+            _kms('//i.kissmetrics.com/i.js');
+            _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
         </script>
         <!-- End Kissmetrics -->
         <!-- Addthis -->
@@ -432,151 +432,151 @@
         <!-- Addthis -->
         <!-- Try FullStory free for 14 days.  -->
         <script>
-        window['_fs_debug'] = false;
-        window['_fs_host'] = 'www.fullstory.com';
-        window['_fs_org'] = '1JH4H';
-        window['_fs_namespace'] = 'FS';
-        (function(m, n, e, t, l, o, g, y) {
-            if (e in m && m.console && m.console.log) {
-                m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
-                return;
-            }
-            g = m[e] = function(a, b) {
-                g.q ? g.q.push([a, b]) : g._api(a, b);
-            };
-            g.q = [];
-            o = n.createElement(t);
-            o.async = 1;
-            o.src = 'https://' + _fs_host + '/s/fs.js';
-            y = n.getElementsByTagName(t)[0];
-            y.parentNode.insertBefore(o, y);
-            g.identify = function(i, v) {
-                g(l, {
-                    uid: i
-                });
-                if (v) g(l, v)
-            };
-            g.setUserVars = function(v) {
-                g(l, v)
-            };
-            g.identifyAccount = function(i, v) {
-                o = 'account';
-                v = v || {};
-                v.acctId = i;
-                g(o, v)
-            };
-            g.clearUserCookie = function(d, i) {
-                d = n.domain;
-                while (1) {
-                    n.cookie = 'fs_uid=;domain=' + d +
-                        ';path=/;expires=' + new Date(0);
-                    i = d.indexOf('.');
-                    if (i < 0) break;
-                    d = d.slice(i + 1)
+            window['_fs_debug'] = false;
+            window['_fs_host'] = 'www.fullstory.com';
+            window['_fs_org'] = '1JH4H';
+            window['_fs_namespace'] = 'FS';
+            (function(m, n, e, t, l, o, g, y) {
+                if (e in m && m.console && m.console.log) {
+                    m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+                    return;
                 }
-            }
-        })(window, document, window['_fs_namespace'], 'script', 'user');
+                g = m[e] = function(a, b) {
+                    g.q ? g.q.push([a, b]) : g._api(a, b);
+                };
+                g.q = [];
+                o = n.createElement(t);
+                o.async = 1;
+                o.src = 'https://' + _fs_host + '/s/fs.js';
+                y = n.getElementsByTagName(t)[0];
+                y.parentNode.insertBefore(o, y);
+                g.identify = function(i, v) {
+                    g(l, {
+                        uid: i
+                    });
+                    if (v) g(l, v)
+                };
+                g.setUserVars = function(v) {
+                    g(l, v)
+                };
+                g.identifyAccount = function(i, v) {
+                    o = 'account';
+                    v = v || {};
+                    v.acctId = i;
+                    g(o, v)
+                };
+                g.clearUserCookie = function(d, i) {
+                    d = n.domain;
+                    while (1) {
+                        n.cookie = 'fs_uid=;domain=' + d +
+                            ';path=/;expires=' + new Date(0);
+                        i = d.indexOf('.');
+                        if (i < 0) break;
+                        d = d.slice(i + 1)
+                    }
+                }
+            })(window, document, window['_fs_namespace'], 'script', 'user');
         </script>
         <!-- End FullStory -->
         <!-- Try keen free for 30 days. -->
         <script type="text/javascript">
-        ! function(name, path, ctx) {
-            var latest, prev = name !== 'Keen' && window.Keen ? window.Keen : false;
-            ctx[name] = ctx[name] || {
-                ready: function(fn) {
-                    var h = document.getElementsByTagName('head')[0],
-                        s = document.createElement('script'),
-                        w = window,
-                        loaded;
-                    s.onload = s.onerror = s.onreadystatechange = function() {
-                        if ((s.readyState && !(/^c|loade/.test(s.readyState))) || loaded) {
-                            return
-                        }
-                        s.onload = s.onreadystatechange = null;
-                        loaded = 1;
-                        latest = w.Keen;
-                        if (prev) {
-                            w.Keen = prev
-                        } else {
-                            try {
-                                delete w.Keen
-                            } catch (e) {
-                                w.Keen = void 0
+            !function(name, path, ctx) {
+                var latest, prev = name !== 'Keen' && window.Keen ? window.Keen : false;
+                ctx[name] = ctx[name] || {
+                    ready: function(fn) {
+                        var h = document.getElementsByTagName('head')[0],
+                            s = document.createElement('script'),
+                            w = window,
+                            loaded;
+                        s.onload = s.onerror = s.onreadystatechange = function() {
+                            if ((s.readyState && !(/^c|loade/.test(s.readyState))) || loaded) {
+                                return
                             }
-                        }
-                        ctx[name] = latest;
-                        ctx[name].ready(fn)
-                    };
-                    s.async = 1;
-                    s.src = path;
-                    h.parentNode.insertBefore(s, h)
+                            s.onload = s.onreadystatechange = null;
+                            loaded = 1;
+                            latest = w.Keen;
+                            if (prev) {
+                                w.Keen = prev
+                            } else {
+                                try {
+                                    delete w.Keen
+                                } catch (e) {
+                                    w.Keen = void 0
+                                }
+                            }
+                            ctx[name] = latest;
+                            ctx[name].ready(fn)
+                        };
+                        s.async = 1;
+                        s.src = path;
+                        h.parentNode.insertBefore(s, h)
+                    }
                 }
-            }
-        }('KeenAsync', 'https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.0.3.min.js', this);
-        KeenAsync.ready(function() {
-            // Configure a client instance
-            var client = new KeenAsync({
-                projectId: '57a5c5aa709a396343683092',
-                writeKey: 'b6ca58ffb871fb7b14b2520006155a79d691d84283f34acb8a8f975391012b70d9a3abb479e737ec15b4b2f49c0899b518011c16f3c46628854a9a4337b47ba7f59c6c864a2523fc710479e411fcc90ec5c16479b5c76fe081838438978222fd'
+            }('KeenAsync', 'https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.0.3.min.js', this);
+            KeenAsync.ready(function() {
+                // Configure a client instance
+                var client = new KeenAsync({
+                    projectId: '57a5c5aa709a396343683092',
+                    writeKey: 'b6ca58ffb871fb7b14b2520006155a79d691d84283f34acb8a8f975391012b70d9a3abb479e737ec15b4b2f49c0899b518011c16f3c46628854a9a4337b47ba7f59c6c864a2523fc710479e411fcc90ec5c16479b5c76fe081838438978222fd'
+                });
+                // Record an event
+                client.recordEvent('pageviews', {
+                    title: document.title
+                });
             });
-            // Record an event
-            client.recordEvent('pageviews', {
-                title: document.title
-            });
-        });
         </script>
         <!-- End keen -->
         <!-- Try Errorception free for 30 days.  -->
         <script>
-        (function(_, e, rr, s) {
-            _errs = [s];
-            var c = _.onerror;
-            _.onerror = function() {
-                var a = arguments;
-                _errs.push(a);
-                c && c.apply(this, a)
-            };
-            var b = function() {
-                var c = e.createElement(rr),
-                    b = e.getElementsByTagName(rr)[0];
-                c.src = "//beacon.errorception.com/" + s + ".js";
-                c.async = !0;
-                b.parentNode.insertBefore(c, b)
-            };
-            _.addEventListener ? _.addEventListener("load", b, !1) : _.attachEvent("onload", b)
-        })
-        (window, document, "script", "57a5c5348e52201709000f0d");
+            (function(_, e, rr, s) {
+                _errs = [s];
+                var c = _.onerror;
+                _.onerror = function() {
+                    var a = arguments;
+                    _errs.push(a);
+                    c && c.apply(this, a)
+                };
+                var b = function() {
+                    var c = e.createElement(rr),
+                        b = e.getElementsByTagName(rr)[0];
+                    c.src = "//beacon.errorception.com/" + s + ".js";
+                    c.async = !0;
+                    b.parentNode.insertBefore(c, b)
+                };
+                _.addEventListener ? _.addEventListener("load", b, !1) : _.attachEvent("onload", b)
+            })
+            (window, document, "script", "57a5c5348e52201709000f0d");
         </script>
         <!-- End Errorception -->
         <!-- ShareThis -->
         <script type="text/javascript">
-        var switchTo5x = true;
+            var switchTo5x = true;
+            //
         </script>
         <script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>
         <script type="text/javascript">
-        stLight.options({
-            publisher: "ff5b69b8-b33a-4734-9f8b-3c4a44ca8b21",
-            doNotHash: false,
-            doNotCopy: false,
-            hashAddressBar: true
-        });
+            stLight.options({
+                publisher: "ff5b69b8-b33a-4734-9f8b-3c4a44ca8b21",
+                doNotHash: false,
+                doNotCopy: false,
+                hashAddressBar: true
+            });
         </script>
         <!-- End ShareThis -->
-        <!--  -->
         <!-- Quantcast Tag -->
         <script type="text/javascript">
-        var _qevents = _qevents || [];
-        (function() {
-            var elem = document.createElement('script');
-            elem.src = (document.location.protocol == "https:" ? "https://secure" : "https://edge") + ".quantserve.com/quant.js";
-            elem.async = true;
-            elem.type = "text/javascript";
-            var scpt = document.getElementsByTagName('script')[0];
-            scpt.parentNode.insertBefore(elem, scpt);
-        })();
-        _qevents.push({
-            qacct: "p-f57e65qZL8m1q"
-        });
+            var _qevents = _qevents || [];
+            (function() {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "https://edge") + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);
+            })();
+            _qevents.push({
+                qacct: "p-f57e65qZL8m1q"
+            });
         </script>
         <noscript>
             <div style="display:none;">
@@ -584,33 +584,34 @@
             </div>
         </noscript>
         <!-- End Quantcast tag -->
-        <!--  -->
         <script>
-        var _mare_pk = '0257c2dccb29f955f09f4512d841d167a106ba456d471c7bc02909f95971a8b1';
-        var _mare_sc = '17f6b5e07d817ebbc97a987340781a86';
-        (function() {
-            var mare = document.createElement('script');
-            mare.type = "text/javascript";
-            mare.async = true;
-            mare.src = ('https:' == document.location.protocol ? 'https://' : 'https://') + 'mare.io/API/script.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(mare, s);
-        })();
+            var _mare_pk = '0257c2dccb29f955f09f4512d841d167a106ba456d471c7bc02909f95971a8b1';
+            var _mare_sc = '17f6b5e07d817ebbc97a987340781a86';
+            (function() {
+                var mare = document.createElement('script');
+                mare.type = "text/javascript";
+                mare.async = true;
+                mare.src = ('https:' == document.location.protocol ? 'https://' : 'https://') + 'mare.io/API/script.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(mare, s);
+            })();
         </script>
         <!--  -->
         <script src="//cdn.trackduck.com/toolbar/prod/td.js" async data-trackduck-id="57bbcbd7ccb84fa3757b2f7a"></script>
-        <!--  -->
+        <!-- typed.min.js -->
         <script src="./lib/typed/typed.min.js"></script>
         <script>
-        $(function() {
-            $(".telement").typed({
-                // strings: ["First sentence.", "Second sentence."],
-                strings: ["Welcome to this website!", "<h3>this is xgqfrms&#39;s offical website of GitHub!</h3>", "Here you can find something that impress you!,", "Have a great day!"],
-                typeSpeed: 0,
-                loop: true,
+            $(function() {
+                $(".telement").typed({
+                    // strings: ["First sentence.", "Second sentence."],
+                    strings: ["Welcome to this website!", "<h3>this is xgqfrms&#39;s offical website of GitHub!</h3>", "Here you can find something that impress you!,", "Have a great day!"],
+                    typeSpeed: 0,
+                    loop: true,
+                });
             });
-        });
         </script>
+        <!-- typed.min.js -->
+        <!-- getfullyear.js -->
         <script src='https://cdn.xgqfrms.xyz/plugins/getfullyear.js' async></script>
     </div>
 </body>
